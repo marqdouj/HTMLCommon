@@ -1,5 +1,10 @@
 # HTML Common
 
+The NuGet package can be found [here](https://www.nuget.org/packages/Marqdouj.HtmlCommon/)
+
+## Current Features 
+- HTML color name enum and extensions.
+
 ## Release Notes
 **8.0.0**
 - Added `HtmlColorName` Enum to represent HTML Named Colors.
