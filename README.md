@@ -4,10 +4,15 @@ The NuGet package can be found [here](https://www.nuget.org/packages/Marqdouj.Ht
 
 ## Current Features 
 - HTML color name enum and extensions.
+  - `HtmlColorNameCollection`. Useful as the Items source for Lists and Dropdowns, etc.
+  Allows for optionally including an item with a 'null' value to the start of the list to represent 'none' or 'not selected'.
 - CSS helper class.
   - Create unique CSS IDs using `Guid`.
 
 ## Release Notes
+**8.0.2**
+- Added `HtmlColorNameCollection`
+
 **8.0.1**
 - Added `CssHelper` class
   - Create unique CSS IDs using `Guid`
