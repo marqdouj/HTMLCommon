@@ -43,7 +43,9 @@ namespace Marqdouj.HtmlCommon
     public class HtmlColorNameListItem(HtmlColorName? value)
     {
         public HtmlColorName? Value { get; } = value;
-        public string? Name => Value?.ToString();
-        public string? Hex => Value?.ToHex();
+        public string Name => Value?.ToString() ?? "";
+        public string Hex => Value?.ToHex() ?? "";
+
+        public override string ToString() => $"{Name}";
     }
 }

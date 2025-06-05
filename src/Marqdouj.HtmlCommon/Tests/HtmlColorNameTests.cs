@@ -45,5 +45,50 @@ namespace Tests
             Assert.IsTrue(names.Items.First().Value.HasValue);
             Assert.AreEqual(count, names.Items.Count, $"Collection should contain {count} items but was {names.Items.Count} items");
         }
+
+        [TestMethod]
+        public void HtmlColorName_Collection_AllItems()
+        {
+            //Arrange
+            var names = new HtmlColorNameCollection();
+
+            //Act
+            foreach (var item in names.Items) 
+            {
+                var actualValue = (HtmlColorName)item.Value!;
+
+                Assert.IsTrue (item.Value.HasValue);
+                Assert.AreEqual(item.Name, item.ToString());
+                Assert.AreEqual(item.Name, actualValue.ToString());
+                Assert.AreEqual(item.Hex, actualValue.ToHex());
+            }
+        }
+
+        [TestMethod]
+        public void HtmlColorNameListItem_NullItem_True()
+        {
+            //Arrange
+            var item = new HtmlColorNameListItem(null);
+
+            //Assert
+            Assert.IsFalse(item.Value.HasValue);
+            Assert.AreEqual("", item.Name);
+            Assert.AreEqual("", item.Hex);
+            Assert.AreEqual("", item.ToString());
+        }
+
+        [TestMethod]
+        public void HtmlColorNameListItem_NullItem_False()
+        {
+            //Arrange
+            var item = new HtmlColorNameListItem(HtmlColorName.Aqua);
+            var actualValue = (HtmlColorName)item.Value!;
+
+            //Assert
+            Assert.IsTrue(item.Value.HasValue);
+            Assert.AreEqual(actualValue.ToString(), item.Name);
+            Assert.AreEqual(actualValue.ToHex(), item.Hex);
+            Assert.AreEqual(actualValue.ToString(), item.ToString());
+        }
     }
 }

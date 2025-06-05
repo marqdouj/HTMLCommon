@@ -10,6 +10,11 @@ The NuGet package can be found [here](https://www.nuget.org/packages/Marqdouj.Ht
   - Create unique CSS IDs using `Guid`.
 
 ## Release Notes
+**8.0.3**
+- `HtmlColorNameListItem` changes.
+  - Name and Hex return value was changed from string? to string.
+  - ToString() override now returns Name.
+
 **8.0.2**
 - Added `HtmlColorNameCollection`
 
