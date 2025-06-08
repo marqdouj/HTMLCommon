@@ -6,6 +6,7 @@ The NuGet package can be found [here](https://www.nuget.org/packages/Marqdouj.Ht
 - HTML color name enum and extensions.
   - `HtmlColorNameCollection`. Useful as the Items source for Lists and Dropdowns, etc.
   Allows for optionally including an item with a 'null' value to the start of the list to represent 'none' or 'not selected'.
+  - Check out the `ColorPicker` FluentUI component in my [Html Components](https://www.nuget.org/packages/Marqdouj.HtmlComponents/) NuGet package.
 - CSS helper class.
   - Create unique CSS IDs using `Guid`.
 
