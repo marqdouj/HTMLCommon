@@ -2,6 +2,9 @@
 
 The NuGet package can be found [here](https://www.nuget.org/packages/Marqdouj.HtmlCommon/)
 
+## Demo
+- A demo of this and some of my other NuGet packages can be found [here](https://github.com/marqdouj/BlazorSandbox)
+
 ## Current Features 
 - HTML color name enum and extensions.
   - `HtmlColorNameCollection`. Useful as the Items source for Lists and Dropdowns, etc.
@@ -11,6 +14,9 @@ The NuGet package can be found [here](https://www.nuget.org/packages/Marqdouj.Ht
   - Create unique CSS IDs using `Guid`.
 
 ## Release Notes
+**8.0.4**
+- Updated ReadMe
+
 **8.0.3**
 - `HtmlColorNameListItem` changes.
   - Name and Hex return value was changed from string? to string.
